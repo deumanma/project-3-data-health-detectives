@@ -109,5 +109,5 @@ Prediction: Employ .predict() to classify new images, further examining the mode
 
 ### 🔄 8. Fine-tuning (Optional)
 For potential improvements:
-Layer Unfreezing: Unfreeze and retrain some of the top layers of the pretrained model with a very low learning rate to refine feature learning on your specific dataset.
+Layer Unfreezing: Unfreeze and retrain some of the top layers of the pretrained model (VGG19, MobileNet) with a very low learning rate to refine feature learning on your specific dataset.
 This step-by-step guide aims to streamline the development of a transfer learning  model for classifying brain tumors using MRI images. By following these instructions, you can harness the power of deep learning to contribute valuable insights into brain tumor diagnosis and classification.
