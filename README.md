@@ -1,4 +1,7 @@
 # Prediction of Presence of Brain Tumor from MRI Scans
+
+<p align="center"> <img width="286" alt="Screenshot 2024-04-22 at 9 51 26 AM" src="https://github.com/deumanma/project-3-data-health-detectives/assets/17521916/910c5eec-08b5-407e-b785-979264fc849f">
+
 ## Project 3 MSU AI Bootcamp
 Team Members: Betsy Deuman	Jasmine Harper	Dr. Chadi Saad	Aaron Wood
 
@@ -38,13 +41,16 @@ The Custom CNN Architecture is tailored specifically for the dataset at hand, al
 * Custom CNN Architecture: Best if you possess the computational resources and domain expertise necessary for developing and refining a specialized model.
 * Transfer Learning with Pretrained Models: Ideal for scenarios with limited data or when aiming to leverage pre-established patterns from extensive trained models, offering faster training and enhanced accuracy.
 
+
 Both strategies necessitate meticulous hyperparameter tuning (learning rate, batch size, number of epochs) and ongoing performance evaluation using a validation set to ensure the model's effectiveness and adjust as needed.
 
 ## Deep Neural Network Diagrams
 
 Custom CNN Architecture: This diagram illustrates a custom Convolutional NeuralNetwork (CNN) specifically designed for the task of classifying brain tumors. It highlights the sequential layers including convolutional, max pooling, batch for normalization, and dense layers, culminating in an output layer with softmax activation for classification into four categories.
+<p align="center"> <img width="619" alt="Screenshot 2024-04-22 at 11 14 09 AM" src="https://github.com/deumanma/project-3-data-health-detectives/assets/17521916/983a72b3-bae4-4a0e-8b61-b86985721337">
 
 Transfer Learning Architecture: This diagram showcases a network utilizing transfer learning from a pre-trained base model (like VGG16, ResNet50, or InceptionV3), followed by a global average pooling layer, dense layers with dropout for classification, and a softmax output layer. This approach leverageslearned features from large datasets to improve classification accuracy.
+<p align="center"> <img width="618" alt="Screenshot 2024-04-22 at 11 14 20 AM" src="https://github.com/deumanma/project-3-data-health-detectives/assets/17521916/c451abd9-ac0e-4c1e-87b6-311dfb394024">
 
 ## Set up a Transfer Learning Architecture with the Brain Tumor MRI Dataset
 
