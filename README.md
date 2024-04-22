@@ -14,7 +14,7 @@ Team Members: Betsy Deuman	Jasmine Harper	Dr. Chadi Saad	Aaron Wood
 - Google Collab
   
 ### Installation
-Clone this repository, and install the packages in the dependent packages. Use the MRI_BRAIN_Tumor_ThursdayFinal to import into Google Collab and do the Data exploration, cleanup, augmentation, and model testing and training on four different models. The BrainTumorChatbot.py file can be used with improvement
+Clone this repository, and install the packages in the dependent packages. Use the MRI_BRAIN_Tumor_ThursdayFinal to import into Google Collab and do the Data exploration, cleanup, augmentation, and model testing and training on four different models. The BrainTumorChatbot.py file can be used with the model-improvement-28-0.98.h5 (the highest accuracy model from the testing set) to run the chatbot. 
 
 ## Brain Tumor Classification Using Deep Neural Networks
 Brain tumor classification is a critical task in medical imaging, aiding in the diagnosis and treatment planning for patients. Deep Learning, particularly Convolutional Neural Networks (CNNs), has shown remarkable success in this area. Here, we explore two effective design strategies for constructing deep neural networks capable of classifying brain tumors into four distinct types.
@@ -29,5 +29,6 @@ The Custom CNN Architecture is tailored specifically for the dataset at hand, al
 (e.g., 224x224 pixels) for consistency.
 * Convulutional layers: Purpose: Extract features from images using small kernel sizes (e.g., 3x3 or 5x5) with ReLU activation for introducing non-linearity.
 * Pooling layers: Function: Employ max pooling to reduce the spatial dimensions and computational load, improving efficiency.
-
-
+* Normalization layers: Stabilize learning by applying batch normalization following convolutional layers.
+* Fully connected layers: Action -  Flatten the output from convolutional and pooling layers, using dense layers for classification. Dropout layers are included to mitigate overfitting.
+* Output Layer: Goal - Classify images into one of the four brain tumor categories using a softmax activation function.
